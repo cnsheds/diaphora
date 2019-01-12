@@ -279,7 +279,7 @@ class CIDAChooser(diaphora.CChooser, Choose2):
     elif cmd_id == self.cmd_unhighlight_functions:
       for item in self.items:
         ea = int(item[1], 16)
-        if not SetColor(ea, CIC_FUNC, 0xFFFFFF):
+        if not SetColor(ea, CIC_FUNC, 0x1e1e1e):
           print "Error setting color for %x" % ea
       Refresh()
     elif cmd_id == self.cmd_diff_graph:
@@ -2189,6 +2189,7 @@ class CHtmlDiff:
     font-family: Courier, monospace;
     table-layout: fixed;
     width: 100%;
+    color: #ffffff;
   }
   table td {
     white-space: nowrap;
@@ -2196,17 +2197,17 @@ class CHtmlDiff:
   }
 
   .diff_add {
-    background-color: #aaffaa;
+    background-color: #006600;
   }
   .diff_chg {
-    background-color: #ffff77;
+    background-color: #996600;
   }
   .diff_sub {
-    background-color: #ffaaaa;
+    background-color: #e54a4a;
   }
   .diff_lineno {
     text-align: right;
-    background-color: #e0e0e0;
+    background-color: #666666;
   }
   """
 

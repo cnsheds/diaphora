@@ -157,11 +157,11 @@ class CChooser():
 
   def get_color(self):
     if self.title.startswith("Best"):
-      return 0xffff99
+      return 0x664400
     elif self.title.startswith("Partial"):
-      return 0x99ff99
+      return 0x004400
     elif self.title.startswith("Unreliable"):
-      return 0x9999ff
+      return 0x7f0055
 
 
 #-----------------------------------------------------------------------
